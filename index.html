@@ -433,6 +433,13 @@ body.dark-theme .attraction-tag.clickable {
     background: linear-gradient(135deg, #6c5ce7, #00cec9) !important;
 }
 
+
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
 </style>
 </head>
 <body>
@@ -581,7 +588,7 @@ body.dark-theme .attraction-tag.clickable {
                     <span class="icon">📅</span>
                     詳細行程 (點擊地點可開啟Google地圖)
                 </h2>
-                <table class="itinerary-table">
+                <div class="table-scroll"><table class="itinerary-table">
                     <thead>
                         <tr>
                             <th>時間</th>
@@ -644,7 +651,7 @@ body.dark-theme .attraction-tag.clickable {
                             <td>✈️ 回家</td>
                         </tr>
                     </tbody>
-                </table>
+                </table></div>
             </div>
 
             <div class="section">
